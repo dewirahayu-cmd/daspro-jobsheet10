@@ -8,11 +8,14 @@ public class SIAKAD08 {
 
         for (int i = 0; i < nilai.length; i++){
             System.out.println("Input nilai mahasiswa ke-" + (i+1));
+            double totalPersiswa = 0;
 
             for (int j = 0; j < nilai[i].length; j++){
                 System.out.println("Nilai mata kuliah " + (j+1) + ": ");
                 nilai[i][j] = sc.nextInt();
+                totalPersiswa += nilai[i][j]; 
             }
+            System.out.println("Nilai rata-rata: " + totalPersiswa/3);
         }
         sc.close();
     }
