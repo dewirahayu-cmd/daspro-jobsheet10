@@ -28,7 +28,6 @@ public class bioskopWithScanner08 {
                 sc.nextLine();
 
                 if (baris >= 1 && baris <= 4 && kolom >= 1 && kolom <= 2) {
-                    System.out.println("Nomor baris/kolom kursi tidak tersedia");
                     if (penonton[baris-1][kolom-1] == null) {
                         penonton[baris-1][kolom-1] = nama;
                         System.out.println("Data penonton berhasil ditambahkan!");
