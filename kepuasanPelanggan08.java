@@ -29,7 +29,6 @@ public class kepuasanPelanggan08 {
             System.out.print("P" + (j + 1) + "\t");
         }
         System.out.println();
-        System.out.println("=".repeat(60));
 
         for (int i = 0; i < jumlahResponden; i++) {
             System.out.print("R" + (i + 1) + "\t\t");
@@ -40,7 +39,7 @@ public class kepuasanPelanggan08 {
         }
 
         // Menghitung rata-rata per responden
-        System.out.println("\n=== RATA-RATA KEPUASAN PER RESPONDEN ===");
+        System.out.println("\n--- Rata rata kepuasan responden ---");
         for (int i = 0; i < jumlahResponden; i++) {
             double total = 0;
             for (int j = 0; j < jumlahPertanyaan; j++) {
@@ -51,7 +50,7 @@ public class kepuasanPelanggan08 {
         }
 
         // Menghitung rata-rata per pertanyaan
-        System.out.println("\n=== RATA-RATA KEPUASAN PER PERTANYAAN ===");
+        System.out.println("\n--- Rata rata kepuasan pertanyaan ---");
         for (int j = 0; j < jumlahPertanyaan; j++) {
             double total = 0;
             for (int i = 0; i < jumlahResponden; i++) {
@@ -62,7 +61,7 @@ public class kepuasanPelanggan08 {
         }
 
         // Menghitung rata-rata keseluruhan
-        System.out.println("\n=== RATA-RATA KESELURUHAN ===");
+        System.out.println("\n--- Rata rata keseluruhan ---");
         double totalKeseluruhan = 0;
         for (int i = 0; i < jumlahResponden; i++) {
             for (int j = 0; j < jumlahPertanyaan; j++) {
